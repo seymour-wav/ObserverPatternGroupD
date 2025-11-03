@@ -1,9 +1,9 @@
 import java.util.*;
 
+public interface UiSubject {
   /**
    * Registers an observer from one or more channel.
    */
-public interface UiSubject {
   void register(UiObserver o, Channel ch);
 
   /**
@@ -11,9 +11,9 @@ public interface UiSubject {
    */
   void unregister(UiObserver o, Channel ch);
 
-/**
- * Notify observer subscribed to a given channel.
- */
+  /**
+   * Notify observer subscribed to a given channel.
+   */
   void notify(Channel ch);
 
   boolean modeToggle();
