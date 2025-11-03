@@ -1,11 +1,13 @@
 public interface UiObserver {
   // Update pushes data
-  public update(UiUpdate update) {
-
+  void update(UiUpdate update) {
+    
   }
 
   // onNotified pulls data
   public onNotified (UiSubjectRef ref, Channel ch) {
 
   }
+
+  // Test comment
 }
